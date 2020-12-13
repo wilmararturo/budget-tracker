@@ -21,13 +21,15 @@ A budget tracker...
 - [Contributing](#contributing)
 - [License](#license)
 
-![preview](./public/icons/icon-512x512.png)
+![preview](./budgetTracker.gif)
 
 ## Usage
 
 ---
 
-Navigate to [budget-tracker](https://floating-dusk-93107.herokuapp.com/).
+Navigate to [budget-tracker](https://floating-dusk-93107.herokuapp.com/).  
+Enter transaction to track your budget over time.
+This is a progressive web app and can be installed locally.
 
 ## Tests
 
