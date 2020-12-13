@@ -1,31 +1,17 @@
-const WebpackPwaManifest = require("webpack-pwa-manifest");
 const path = require("path");
 
 const config = {
-  entry: "./public/index.js",
+  entry: {
+    app: "./public/index.js",
+    db: "./public/db.js",
+  },
   output: {
+    // publicPath: "/public",
     path: __dirname + "/public/dist",
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
   },
   mode: "development",
-  plugins: [
-    new WebpackPwaManifest({
-      name: "Budget Tracker",
-      short_name: "Budget Tracker",
-      description: "A Progressive Web Budget Tracking App",
-      background_color: "#ffffff",
-      theme_color: "#ffffff",
-      "theme-color": "#ffffff",
-      start_url: "/",
-      icons: [
-        {
-          src: path.resolve("public/icons/icon-192x192.png"),
-          sizes: [192, 512],
-          destination: path.join("assets", "icons"),
-        },
-      ],
-    }),
-  ],
+
   // configure webpack to use babel-loader to bundle our separate modules and transpile the code
   // refer to https://github.com/babel/babel-loader for more information on the settings
   module: {
