@@ -5,10 +5,15 @@ const FILES_TO_CACHE = [
   "/index.js",
   "/db.js",
   "/styles.css",
+  "/dist/app.bundle.js",
+  "/dist/db.bundle.js",
+  "/dist/icons/icon-192x192.png",
+  "/dist/icons/icon-512x512.png",
+  "https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
   "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
 ];
 
-const PRECACHE = "precache-v1";
+const PRECACHE = "precache-v2";
 const RUNTIME = "runtime";
 
 self.addEventListener("install", (event) => {
