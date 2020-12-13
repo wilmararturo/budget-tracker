@@ -27,9 +27,9 @@ A budget tracker...
 
 ---
 
-Navigate to [budget-tracker](https://floating-dusk-93107.herokuapp.com/).  
-Enter transaction to track your budget over time.
-This is a progressive web app and can be installed locally.
+- Navigate to [budget-tracker](https://floating-dusk-93107.herokuapp.com/).
+- Enter transaction to track your budget over time.
+- This is a progressive web app and can be installed locally.
 
 ## Tests
 
